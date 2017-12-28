@@ -1,0 +1,8 @@
+#!/bin/sh
+
+IMAGE="asssaf/expo"
+
+docker run -it --rm \
+	-v $PWD:/mnt --workdir /mnt \
+	--net=host \
+	--entrypoint=npm $IMAGE "$*"
