@@ -5,4 +5,4 @@ IMAGE="asssaf/expo"
 docker run -it --rm \
 	-v $PWD:/mnt --workdir /mnt \
 	-v $HOME/.expo:/root/.expo \
-	--entrypoint=exp $IMAGE "$*"
+	--entrypoint=exp $IMAGE "$@"
